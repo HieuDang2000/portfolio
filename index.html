@@ -4,9 +4,8 @@
 <p align="center">
     <img src = "https://media.discordapp.net/attachments/842014909264953354/867806346593042483/Cath-temp-banner.png?width=1244&height=415">
     <br>
-  <a href="https://npmjs.org/package/cath" target="_blank"><img alt='Version' src="https://img.shields.io/github/package-json/v/night0721/cath?style=for-the-badge&color=555555&labelColor=02023a"></a>
+  <a href="https://npmjs.org/package/cath" target="_blank"><img alt='Version' src="https://img.shields.io/github/package-json/v/night0721/cath?style=for-the-badge&color=555555&labelColor=02023a"></a> <a href="https://npmjs.org/package/cath" target="_blank"><img alt='Download' src="https://img.shields.io/npm/dt/cath?style=for-the-badge&color=02023a"></a>
   <a href="https://github.com/night0721/cath.exe/blob/main/LICENSE" target="_blank"><img alt='Package' src="https://img.shields.io/static/v1?label=LICENSE&message=Apache%202.0&color=555555&labelColor=02023a&style=for-the-badge&scale=1.4"></a>
-  <a href="https://npmjs.org/package/cath" target="_blank"><img alt='downloads' src="https://img.shields.io/npm/dw/cath?color=555555&labelColor=02023a&style=for-the-badge"></a>
   <a href="https://github.com/night0721/cath" target="_blank"><img alt='Repo Stars' src="https://img.shields.io/github/stars/night0721/cath?logo=github&color=555555&labelColor=02023a&style=for-the-badge"></a>
   <a href="https://ko-fi.com/I2I35XISJ" target="_blank"><img alt='Kofi' src="https://img.shields.io/static/v1?label=Support%20Us&message=KO.FI&color=ff5e5b&logo=kofi&logoColor=white&style=for-the-badge&scale=1.4"></a>  
   <br>
