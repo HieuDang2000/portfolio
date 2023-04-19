@@ -1,184 +1,274 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>night0721</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
-    <link rel="stylesheet" href="index.css">
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/77528305?v=4" type="image/png"></head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/util.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <!-- HTML Meta Tags -->
+    <title>night0721's Portfolio</title>
+    <meta name="title" content="Night" />
+    <meta name="theme-color" content="#deb4d1" data-react-helmet="true" />
+    <meta name="msapplication-TileColor" content="#deb4d1" />
+    <meta
+      name="description"
+      content="Hello I am Night. \nDeveloper of cath.exe & Lilase"
+    />
+    <meta name="keywords" content="developer, night0721, nyx, cath" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Night" />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Night" />
+    <meta
+      itemprop="description"
+      content="Hello I am Night. \nDeveloper of cath.exe & Lilase"
+    />
+    <meta
+      itemprop="image"
+      content="https://avatars.githubusercontent.com/u/77528305?s=100&u=da1b599f704b61222103db3c53aaab82ee9a102c&v=4"
+    />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://night0721.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Night" />
+    <meta property="og:site_name" content="NXC" />
+    <meta
+      property="og:description"
+      content="Hello I am Night. \nDeveloper of cath.exe & Lilase"
+    />
+    <meta
+      property="og:image"
+      content="https://avatars.githubusercontent.com/u/77528305?s=100&u=da1b599f704b61222103db3c53aaab82ee9a102c&v=4"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Night" />
+    <meta
+      name="twitter:description"
+      content="Hello I am Night. \nDeveloper of cath.exe & Lilase"
+    />
+    <meta
+      name="twitter:image"
+      content="https://avatars.githubusercontent.com/u/77528305?s=100&u=da1b599f704b61222103db3c53aaab82ee9a102c&v=4"
+    />
+    <meta
+      name="twitter:image:src"
+      content="https://avatars.githubusercontent.com/u/77528305?s=100&u=da1b599f704b61222103db3c53aaab82ee9a102c&v=4"
+    />
+    <meta content="video.other" property="og:type" />
+    <meta content="image/gif" property="og:image:type" />
+
+    <link type="application/json+oembed" href="assets/oembed.json" />
+  </head>
 
   <body>
-    <div id="loading">
-      <div id="spinner"></div>
-    </div>
-    <div id="profile">
-      <div id="profile_img" style="background: url(https://avatars.githubusercontent.com/u/77528305?v=4) center;"></div>
-      <div id="username"><span style="display:block;">Night Kaly</span><a href="https://github.com/night0721">@night0721</a></div>
-      <div id="userbio" style="display: block;">Developer of cath.exe, a.k.a Kirito.                  
-Discord: Ń1ght#4004
-@CathTeam </div>
-      <div id="about">
-                <span style="display:none;"><i class="fas fa-users"></i> &nbsp; null</span>
-                <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
-                <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a href="https://night0721.me/">https://night0721.me/</a></span>
-                <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Hong Kong/UK</span>
-                <span style="display:block;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span>
-                <div class="socials">
-                <span style="display:block;"><a href="https://www.twitter.com/nightkirito0721" target="_blank" class="socials"><i class="fab fa-twitter"></i></a></span>
-                <span style="display:none !important;"><a href="https://www.dribbble.com/null" target="_blank" class="socials"><i class="fab fa-dribbble"></i></a></span>
-                <span style="display:none !important;"><a href="https://www.linkedin.com/in/null/" target="_blank" class="socials"><i class="fab fa-linkedin-in"></i></a></span>
-                <span style="display:none !important;"><a href="https://www.medium.com/@null/" target="_blank" class="socials"><i class="fab fa-medium-m"></i></a></span>
-                </div>
-                </div>
-    </div>
-    <div id="display">
-      <div id="work">
-        <h1>Work.</h1>
-        <div class="projects" id="work_section">
-                        <a href="https://github.com/night0721/cath.exe" target="_blank">
-                        <section>
-                            <div class="section_title">cath.exe</div>
-                            <div class="about_section">
-                            <span style="display:block;">The first CODM discrod bot -- cath.exe Template</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 32</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 11</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/night0721/Lilase" target="_blank">
-                        <section>
-                            <div class="section_title">Lilase</div>
-                            <div class="about_section">
-                            <span style="display:block;">Minecraft Forge 1.8.9 QOL mod for auction sniping and flipping</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 9</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 2</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/night0721/RPC_Night" target="_blank">
-                        <section>
-                            <div class="section_title">RPC_Night</div>
-                            <div class="about_section">
-                            <span style="display:block;">Discord Rich Presence</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 2</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/night0721/cath.gq" target="_blank">
-                        <section>
-                            <div class="section_title">cath.gq</div>
-                            <div class="about_section">
-                            <span style="display:block;">Website and API for cath.exe</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/night0721/night0721" target="_blank">
-                        <section>
-                            <div class="section_title">night0721</div>
-                            <div class="about_section">
-                            <span style="display:block;">Personal stats with a neat looking images</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        </a></div>
+    <nav
+      id="nav"
+      style="
+        width: 100vw;
+        backdrop-filter: blur(5px);
+        box-shadow: inset 0 -1px 0 0 hsla(0, 0%, 100%, 0.1);
+      "
+    >
+      <div class="nav-container-custom nav-wrapper">
+        <div class="brand">
+          <span>
+            <strong
+              class="shine"
+              style="color: white; font-family: monospace; font-size: 30px"
+              >Portfolio</strong
+            >
+          </span>
+        </div>
+        <div class="hamburger" style="padding-left: 23px">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-list">
+          <li><a class="nav-link" data-scroll="#">Home</a></li>
+          <li><a class="nav-link" data-scroll="#about">About</a></li>
+          <li>
+            <a class="nav-link" target="_blank" data-scroll="#projects"
+              >Projects</a
+            >
+          </li>
+          <li><a class="nav-link" data-scroll="#contact">Contact</a></li>
+          <li>
+            <a
+              class="nav-link"
+              target="_blank"
+              style="color: #007cf0"
+              href="https://paypal.me/night0721"
+              >Donate</a
+            >
+          </li>
+        </ul>
       </div>
-      <div id="forks" style="display:none;">
-        <h1>Forks.</h1>
-        <div class="projects" id="forks_section"></div>
-      </div>
-      <div id="blog_section">
-        <h1>Blog.</h1>
-        <div id="blogs"></div>
-      </div>
-      <div id="footer">
-        <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
-      </div>
-    </div>
-    <script type="text/javascript">
-      setTimeout(function() {
-        document.getElementById("loading").classList.add("animated");
-        document.getElementById("loading").classList.add("fadeOut");
-        setTimeout(function() {
-          document.getElementById("loading").classList.remove("animated");
-          document.getElementById("loading").classList.remove("fadeOut");
-          document.getElementById("loading").style.display = "none";
-        }, 800);
-      }, 1500);
-      $.getJSON("blog.json", function(blog) {
-        blog = blog || [];
-        if (blog.length == 0) {
-          return (document.getElementById("blog_section").style.display =
-            "none");
-        }
-        for (var i = 0; i < blog.length; i++) {
-          $("#blogs").append(`
-            <a href="./blog/${blog[i].url_title}/" target="_blank">
-                <section>
-                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
-                    <div class="blog_container">
-                        <div class="section_title">${blog[i].title}</div>
-                        <div class="about_section">
-                            ${blog[i].sub_title}
-                        </div>
-                    </div>
-                </section>
-            </a>
-            `);
-        }
-      }).fail(function() {
-        return (document.getElementById("blog_section").style.display = "none");
-      });
-    </script>
+    </nav>
 
+    <div class="content" id="">
+      <div class="social">
+        <a
+          href="https://discord.gg/SbQHChmGcp"
+          id="discord"
+          target="_blank"
+          class="icon"
+        >
+          <i class="fab fa-discord"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/Kirito01"
+          id="youtube"
+          target="_blank"
+          class="icon"
+        >
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a
+          href="https://github.com/night0721"
+          id="github"
+          target="_blank"
+          class="icon"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="text">
+        <h1 class="shine head">night0721</h1>
+        <p class="paragraph">Backend, Discord Bot, Minecraft Mod Developer</p>
+        <br />
+        <p class="paragraph">
+          "Only if you asked to see me, our meeting would be meaningful to me"
+        </p>
+        <button class="hero-button nav-link" data-scroll="#projects">
+          Projects
+        </button>
+      </div>
+    </div>
+    <section id="about" class="about">
+      <span class="line"></span>
+      <div class="section-label">
+        <div class="label-number">1</div>
+      </div>
+      <div class="about-content d-flex align-center space-between row">
+        <div class="about-img">
+          <canvas id="canvas"></canvas>
+        </div>
+        <div class="about-text">
+          <h4 class="about-title c-white">About Me</h4>
+          <p class="about-description grey">
+            I am a Backend Developer from Hong Kong. I have a good knowledge of
+            node.js, JavaScript, TypeScript, Java, Kotlin, Python and MongoDB
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="stats">
+      <section class="statistics">
+        <div class="stats-container">
+          <div class="stats-item">
+            <p
+              data-purecounter-start="0"
+              data-purecounter-end=""
+              class="highlight purecounter"
+              id="stars-count"
+            ></p>
+            <span class="stats-description">Stars in Github</span>
+          </div>
+          <div class="stats-item">
+            <p class="highlight">
+              <span
+                data-purecounter-start="0"
+                data-purecounter-end=""
+                class="highlight purecounter"
+                id="followers-count"
+              ></span>
+            </p>
+            <span class="stats-description">Followers in Github</span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id="contact" class="contact">
+      <span class="line"></span>
+      <div class="section-label">
+        <div class="label-number">2</div>
+      </div>
+      <div class="about-content d-flex align-center space-between row">
+        <div class="about-text">
+          <h4 class="about-title c-white">Contact</h4>
+          <p class="about-description grey">
+            Discord: Ń1ght#4004 (452076196419600394)
+          </p>
+          <p class="about-description grey">Email: nightkalyyy@gmail.com</p>
+          <p class="about-description grey">
+            Discord Server:
+            <a href="https://discord.gg/SbQHChmGcp">Join</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects">
+      <span
+        style="background-image: linear-gradient(90deg, #7928ca, #ff0080)"
+        class="line"
+      ></span>
+      <div class="section-label">
+        <div class="label-number project-label">3</div>
+      </div>
+      <h4 class="about-title c-white">Projects</h4>
+      <p class="about-description grey" style="font-size: 18px">
+        What I have worked on
+      </p>
+      <div class="project-content"></div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <h3>Ń1ght#4004</h3>
+        <p>By night0721</p>
+        <p>Credits: Zero Two#7177</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
     <script>
-      const magicProjectsGrid = new MagicGrid({
-        container: "#work_section",
-        animate: false,
-        gutter: 30, // default gutter size
-        static: true,
-        useMin: false,
-        maxColumns: 2,
-        useTransform: true
-      });
-
-      const magicForksGrid = new MagicGrid({
-        container: "#forks_section",
-        animate: false,
-        gutter: 30, // default gutter size
-        static: true,
-        useMin: false,
-        maxColumns: 2,
-        useTransform: true
-      });
-
-      $("document").ready(() => {
-        magicProjectsGrid.listen();
-        magicForksGrid.listen();
-      });
+      if (window.innerWidth > 600) {
+        new PureCounter({
+          selector: ".purecounter",
+          start: 0,
+          end: 100,
+          duration: 2,
+          delay: 10,
+          once: true,
+          repeat: false,
+          decimals: 0,
+          legacy: true,
+          filesizing: false,
+          currency: false,
+          separator: false,
+        });
+      }
     </script>
-  
-
-</body></html>
+    <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r98/three.js"></script>
+    <script src="https://fariskassim.com/stage/rebel9/teaf/blob/v4/js/perlin.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="assets/js/projects.js"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
