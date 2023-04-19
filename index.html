@@ -1,57 +1,184 @@
-<!DOCTYPE html><html class="default"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>cath</title><meta name="description" content="Documentation for cath"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">cath</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label><input type="checkbox" id="tsd-filter-externals" checked/><label class="tsd-widget" for="tsd-filter-externals">Externals</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1>cath</h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography"><h1 align="center"> CATH </h1>
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>night0721</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/77528305?v=4" type="image/png"></head>
 
-<!-- header -->
-<p align="center">
-    <img src = "https://media.discordapp.net/attachments/842014909264953354/867806346593042483/Cath-temp-banner.png?width=1244&height=415">
-    <br>
-  <a href="https://npmjs.org/package/cath" target="_blank"><img alt='Version' src="https://img.shields.io/github/package-json/v/night0721/cath?style=for-the-badge&color=555555&labelColor=02023a"></a> <a href="https://npmjs.org/package/cath" target="_blank"><img alt='Download' src="https://img.shields.io/npm/dt/cath?style=for-the-badge&color=02023a"></a>
-  <a href="https://github.com/night0721/cath/blob/main/LICENSE" target="_blank"><img alt='Package' src="https://img.shields.io/npm/l/cath?color=02023a&style=for-the-badge"></a>
-  <a href="https://github.com/night0721/cath" target="_blank"><img alt='Repo Stars' src="https://img.shields.io/github/stars/night0721/cath?logo=github&color=555555&labelColor=02023a&style=for-the-badge"></a>
-  <a href="https://ko-fi.com/I2I35XISJ" target="_blank"><img alt='Kofi' src="https://img.shields.io/static/v1?label=Support%20Us&message=KO.FI&color=ff5e5b&logo=kofi&logoColor=white&style=for-the-badge&scale=1.4"></a>  
-  <br>
-    <a href="https://rebrand.ly/cathSupport"><img src="https://discordapp.com/api/guilds/718762019586572341/widget.png?style=banner2" alt="Support Server" /></a>
-  <br>
-    <a href="https://npmjs.org/package/cath" target="_blank"><img alt='Node Package' src="https://nodei.co/npm/cath.png"></a>
-</p>
+  <body>
+    <div id="loading">
+      <div id="spinner"></div>
+    </div>
+    <div id="profile">
+      <div id="profile_img" style="background: url(https://avatars.githubusercontent.com/u/77528305?v=4) center;"></div>
+      <div id="username"><span style="display:block;">Night Kaly</span><a href="https://github.com/night0721">@night0721</a></div>
+      <div id="userbio" style="display: block;">Developer of cath.exe, a.k.a Kirito.                  
+Discord: Ń1ght#4004
+@CathTeam </div>
+      <div id="about">
+                <span style="display:none;"><i class="fas fa-users"></i> &nbsp; null</span>
+                <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
+                <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a href="https://night0721.me/">https://night0721.me/</a></span>
+                <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Hong Kong/UK</span>
+                <span style="display:block;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span>
+                <div class="socials">
+                <span style="display:block;"><a href="https://www.twitter.com/nightkirito0721" target="_blank" class="socials"><i class="fab fa-twitter"></i></a></span>
+                <span style="display:none !important;"><a href="https://www.dribbble.com/null" target="_blank" class="socials"><i class="fab fa-dribbble"></i></a></span>
+                <span style="display:none !important;"><a href="https://www.linkedin.com/in/null/" target="_blank" class="socials"><i class="fab fa-linkedin-in"></i></a></span>
+                <span style="display:none !important;"><a href="https://www.medium.com/@null/" target="_blank" class="socials"><i class="fab fa-medium-m"></i></a></span>
+                </div>
+                </div>
+    </div>
+    <div id="display">
+      <div id="work">
+        <h1>Work.</h1>
+        <div class="projects" id="work_section">
+                        <a href="https://github.com/night0721/cath.exe" target="_blank">
+                        <section>
+                            <div class="section_title">cath.exe</div>
+                            <div class="about_section">
+                            <span style="display:block;">The first CODM discrod bot -- cath.exe Template</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 32</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 11</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/night0721/Lilase" target="_blank">
+                        <section>
+                            <div class="section_title">Lilase</div>
+                            <div class="about_section">
+                            <span style="display:block;">Minecraft Forge 1.8.9 QOL mod for auction sniping and flipping</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 9</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 2</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/night0721/RPC_Night" target="_blank">
+                        <section>
+                            <div class="section_title">RPC_Night</div>
+                            <div class="about_section">
+                            <span style="display:block;">Discord Rich Presence</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 2</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/night0721/cath.gq" target="_blank">
+                        <section>
+                            <div class="section_title">cath.gq</div>
+                            <div class="about_section">
+                            <span style="display:block;">Website and API for cath.exe</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/night0721/night0721" target="_blank">
+                        <section>
+                            <div class="section_title">night0721</div>
+                            <div class="about_section">
+                            <span style="display:block;">Personal stats with a neat looking images</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        </a></div>
+      </div>
+      <div id="forks" style="display:none;">
+        <h1>Forks.</h1>
+        <div class="projects" id="forks_section"></div>
+      </div>
+      <div id="blog_section">
+        <h1>Blog.</h1>
+        <div id="blogs"></div>
+      </div>
+      <div id="footer">
+        <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      setTimeout(function() {
+        document.getElementById("loading").classList.add("animated");
+        document.getElementById("loading").classList.add("fadeOut");
+        setTimeout(function() {
+          document.getElementById("loading").classList.remove("animated");
+          document.getElementById("loading").classList.remove("fadeOut");
+          document.getElementById("loading").style.display = "none";
+        }, 800);
+      }, 1500);
+      $.getJSON("blog.json", function(blog) {
+        blog = blog || [];
+        if (blog.length == 0) {
+          return (document.getElementById("blog_section").style.display =
+            "none");
+        }
+        for (var i = 0; i < blog.length; i++) {
+          $("#blogs").append(`
+            <a href="./blog/${blog[i].url_title}/" target="_blank">
+                <section>
+                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
+                    <div class="blog_container">
+                        <div class="section_title">${blog[i].title}</div>
+                        <div class="about_section">
+                            ${blog[i].sub_title}
+                        </div>
+                    </div>
+                </section>
+            </a>
+            `);
+        }
+      }).fail(function() {
+        return (document.getElementById("blog_section").style.display = "none");
+      });
+    </script>
 
-<p><strong>Cath</strong> is a powerful <a href="https://nodejs.org">Node.js</a> module that can easily interact and get data from the Cath API
-If you like this package, feel free to <img src = "https://discord.com/assets/141d49436743034a59dec6bd5618675d.svg" width = "16"> <strong>Star</strong> and <strong>fork</strong> this repository.<br><br></p>
+    <script>
+      const magicProjectsGrid = new MagicGrid({
+        container: "#work_section",
+        animate: false,
+        gutter: 30, // default gutter size
+        static: true,
+        useMin: false,
+        maxColumns: 2,
+        useTransform: true
+      });
 
-<a href="#install-the-package-✔" id="install-the-package-✔" style="color: inherit; text-decoration: none;">
-  <h1>Install the package ✔</h1>
-</a>
-<p>Download from npm</p>
-<pre><code class="language-powershell"><span class="hl-0">npm install cath</span>
-</code></pre>
-<p>Download from yarn</p>
-<pre><code class="language-powershell"><span class="hl-0">yarn add cath</span>
-</code></pre>
+      const magicForksGrid = new MagicGrid({
+        container: "#forks_section",
+        animate: false,
+        gutter: 30, // default gutter size
+        static: true,
+        useMin: false,
+        maxColumns: 2,
+        useTransform: true
+      });
 
-<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
-  <h2>Examples</h2>
-</a>
+      $("document").ready(() => {
+        magicProjectsGrid.listen();
+        magicForksGrid.listen();
+      });
+    </script>
+  
 
-<a href="#launch-of-the-module" id="launch-of-the-module" style="color: inherit; text-decoration: none;">
-  <h3>Launch of the module</h3>
-</a>
-<pre><code class="language-js"><span class="hl-1">const</span><span class="hl-0"> </span><span class="hl-2">cath</span><span class="hl-0"> = </span><span class="hl-3">require</span><span class="hl-0">(</span><span class="hl-4">&quot;cath&quot;</span><span class="hl-0">);</span><br/><br/><span class="hl-1">const</span><span class="hl-0"> </span><span class="hl-2">reddit_data</span><span class="hl-0"> = </span><span class="hl-5">await</span><span class="hl-0"> </span><span class="hl-6">cath</span><span class="hl-0">.</span><span class="hl-3">getreddit</span><span class="hl-0">(</span><span class="hl-4">&quot;meme&quot;</span><span class="hl-0">);</span><br/><span class="hl-6">console</span><span class="hl-0">.</span><span class="hl-3">log</span><span class="hl-0">(</span><span class="hl-6">reddit_data</span><span class="hl-0">); </span><span class="hl-7">// returns an object</span><br/><br/><span class="hl-1">const</span><span class="hl-0"> </span><span class="hl-2">answer</span><span class="hl-0"> = </span><span class="hl-5">await</span><span class="hl-0"> </span><span class="hl-6">cath</span><span class="hl-0">.</span><span class="hl-3">random8ball</span><span class="hl-0">();</span><br/><span class="hl-6">console</span><span class="hl-0">.</span><span class="hl-3">log</span><span class="hl-0">(</span><span class="hl-6">answer</span><span class="hl-0">); </span><span class="hl-7">// a random answer from 8ball</span>
-</code></pre>
-
-<a href="#support-feature-request-amp-bug-reports" id="support-feature-request-amp-bug-reports" style="color: inherit; text-decoration: none;">
-  <h1>Support, Feature Request &amp; Bug Reports</h1>
-</a>
-
-<a href="#-support-amp-feature-request" id="-support-amp-feature-request" style="color: inherit; text-decoration: none;">
-  <h2><img src = "https://cdn.discordapp.com/emojis/867093614403256350.png?v=1" width = 18> Support &amp; Feature Request</h2>
-</a>
-<p>Join the official <a href="https://discord.gg/SbQHChmGcp">Support Server</a> on Discord &amp; we will be happy to assist you. <br>
-To Request new features contact us on Discord using the support server.</p>
-
-<a href="#-report-bugs" id="-report-bugs" style="color: inherit; text-decoration: none;">
-  <h2><img src = "https://cdn.discordapp.com/emojis/867093601962950666.png?v=1" width = "18"> Report Bugs</h2>
-</a>
-<p>You can report bugs or issues by opening a issue in this repository. Alternatevely you can also contact us on Discord using the support server.</p>
-<p align = "center">
-  <a href="https://rebrand.ly/cathSupport" target="_blank"><img src="https://discordapp.com/api/guilds/718762019586572341/widget.png?style=banner1"></a>
-</p>
-</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Exports</a></li></ul></nav><nav class="tsd-navigation secondary menu-sticky"><ul><li class="tsd-kind-class"><a href="classes/CODMClient.html" class="tsd-kind-icon">CODMClient</a></li><li class="tsd-kind-class"><a href="classes/CodeClient.html" class="tsd-kind-icon">Code<wbr/>Client</a></li><li class="tsd-kind-class"><a href="classes/GiveawaysClient.html" class="tsd-kind-icon">Giveaways<wbr/>Client</a></li><li class="tsd-kind-class"><a href="classes/ImageClient.html" class="tsd-kind-icon">Image<wbr/>Client</a></li><li class="tsd-kind-class"><a href="classes/Pagination.html" class="tsd-kind-icon">Pagination</a></li><li class="tsd-kind-class"><a href="classes/StarboardClient.html" class="tsd-kind-icon">Starboard<wbr/>Client</a></li><li class="tsd-kind-class"><a href="classes/URLClient.html" class="tsd-kind-icon">URLClient</a></li><li class="tsd-kind-interface"><a href="interfaces/Applications.html" class="tsd-kind-icon">Applications</a></li><li class="tsd-kind-interface"><a href="interfaces/CODMClientOptions.html" class="tsd-kind-icon">CODMClient<wbr/>Options</a></li><li class="tsd-kind-interface"><a href="interfaces/CodeData.html" class="tsd-kind-icon">Code<wbr/>Data</a></li><li class="tsd-kind-interface"><a href="interfaces/DefaultGiveawayMessages.html" class="tsd-kind-icon">Default<wbr/>Giveaway<wbr/>Messages</a></li><li class="tsd-kind-interface"><a href="interfaces/DiscordActivityOptions.html" class="tsd-kind-icon">Discord<wbr/>Activity<wbr/>Options</a></li><li class="tsd-kind-interface"><a href="interfaces/GiveawaySchema.html" class="tsd-kind-icon">Giveaway<wbr/>Schema</a></li><li class="tsd-kind-interface"><a href="interfaces/GiveawaysClientOptions.html" class="tsd-kind-icon">Giveaways<wbr/>Client<wbr/>Options</a></li><li class="tsd-kind-interface"><a href="interfaces/PerkData.html" class="tsd-kind-icon">Perk<wbr/>Data</a></li><li class="tsd-kind-interface"><a href="interfaces/RedditObject.html" class="tsd-kind-icon">Reddit<wbr/>Object</a></li><li class="tsd-kind-interface"><a href="interfaces/ScorestreakData.html" class="tsd-kind-icon">Scorestreak<wbr/>Data</a></li><li class="tsd-kind-interface"><a href="interfaces/StarboardClientOptions.html" class="tsd-kind-icon">Starboard<wbr/>Client<wbr/>Options</a></li><li class="tsd-kind-interface"><a href="interfaces/StarboardGuild.html" class="tsd-kind-icon">Starboard<wbr/>Guild</a></li><li class="tsd-kind-interface"><a href="interfaces/StarboardGuildOptions.html" class="tsd-kind-icon">Starboard<wbr/>Guild<wbr/>Options</a></li><li class="tsd-kind-interface"><a href="interfaces/URLData.html" class="tsd-kind-icon">URLData</a></li><li class="tsd-kind-interface"><a href="interfaces/starMessageData.html" class="tsd-kind-icon">star<wbr/>Message<wbr/>Data</a></li><li class="tsd-kind-variable"><a href="modules.html#default" class="tsd-kind-icon">default</a></li><li class="tsd-kind-function"><a href="modules.html#DiscordActivity" class="tsd-kind-icon">Discord<wbr/>Activity</a></li><li class="tsd-kind-function"><a href="modules.html#HHMMSS" class="tsd-kind-icon">HHMMSS</a></li><li class="tsd-kind-function"><a href="modules.html#bool" class="tsd-kind-icon">bool</a></li><li class="tsd-kind-function"><a href="modules.html#cleanText" class="tsd-kind-icon">clean<wbr/>Text</a></li><li class="tsd-kind-function"><a href="modules.html#confirmation" class="tsd-kind-icon">confirmation</a></li><li class="tsd-kind-function"><a href="modules.html#daysAgo" class="tsd-kind-icon">days<wbr/>Ago</a></li><li class="tsd-kind-function"><a href="modules.html#doublestruck" class="tsd-kind-icon">doublestruck</a></li><li class="tsd-kind-function"><a href="modules.html#formatUpper" class="tsd-kind-icon">format<wbr/>Upper</a></li><li class="tsd-kind-function"><a href="modules.html#fractur" class="tsd-kind-icon">fractur</a></li><li class="tsd-kind-function"><a href="modules.html#getreddit" class="tsd-kind-icon">getreddit</a></li><li class="tsd-kind-function"><a href="modules.html#parseMS" class="tsd-kind-icon">parseMS</a></li><li class="tsd-kind-function"><a href="modules.html#parseString" class="tsd-kind-icon">parse<wbr/>String</a></li><li class="tsd-kind-function"><a href="modules.html#randint" class="tsd-kind-icon">randint</a></li><li class="tsd-kind-function"><a href="modules.html#random8ball" class="tsd-kind-icon">random8ball</a></li><li class="tsd-kind-function"><a href="modules.html#randomID" class="tsd-kind-icon">randomID</a></li><li class="tsd-kind-function"><a href="modules.html#selectRandom" class="tsd-kind-icon">select<wbr/>Random</a></li><li class="tsd-kind-function"><a href="modules.html#sleep" class="tsd-kind-icon">sleep</a></li><li class="tsd-kind-function"><a href="modules.html#superscript" class="tsd-kind-icon">superscript</a></li><li class="tsd-kind-function"><a href="modules.html#timer" class="tsd-kind-icon">timer</a></li><li class="tsd-kind-function"><a href="modules.html#trimArray" class="tsd-kind-icon">trim<wbr/>Array</a></li></ul></nav></div></div></div><footer class="with-border-bottom"><div class="container"><h2>Legend</h2><div class="tsd-legend-group"><ul class="tsd-legend"><li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li><li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li><li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li></ul><ul class="tsd-legend"><li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li></ul><ul class="tsd-legend"><li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li></ul></div><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="container tsd-generator"><p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div><div class="overlay"></div><script src="assets/main.js"></script></body></html>
+</body></html>
