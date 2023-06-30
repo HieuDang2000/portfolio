@@ -62,65 +62,6 @@ projects.forEach(project => {
   		</div>`;
 });
 
-// Magic in footer
-(async () => {
-  const github_lastest_commit = await fetch(
-    `https://api.github.com/repos/night0721/night0721/commits/master`
-  ).then(res => res.json());
-  const date = new Date(github_lastest_commit.commit.author.date);
-  const footer = document.querySelector(".footer-content");
-  footer.innerHTML += `
-  <!-- Last updated on ${date.toString()} ;-;-->
-  <p>✨Last updated on ${date.getDate()}${
-    date.getDate() === 1
-      ? "st"
-      : date.getDate() === 2
-      ? "nd"
-      : date.getDate() === 3
-      ? "rd"
-      : "th"
-  } ${
-    [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
-    ][date.getMonth()]
-  } ${date.getFullYear()}</p> using magic from Github✨`;
-})();
-
-// Stats
-(async () => {
-  let stars = 0;
-  const CountStars = async () => {
-    let StarsData = await fetch(
-      `https://api.github.com/users/night0721/repos?per-page=100`
-    ).then(res => res.json());
-    for (const repo of StarsData) stars += repo.stargazers_count;
-    console.log();
-    const stats = document.getElementById("stars-count");
-    stats.attributes["data-purecounter-end"].value = stars;
-    stats.innerHTML = stars;
-  };
-  const CountFollowers = async () => {
-    let FollowersData = await fetch(
-      `https://api.github.com/users/night0721`
-    ).then(res => res.json());
-    const stats = document.getElementById("followers-count");
-    stats.attributes["data-purecounter-end"].value = FollowersData.followers;
-    stats.innerHTML = FollowersData.followers;
-  };
-  await CountStars();
-  await CountFollowers();
-})();
 
 // Blob
 const renderer = new THREE.WebGLRenderer({
@@ -199,12 +140,4 @@ hamburger.addEventListener("click", function () {
     bars[2].style.transform = "rotate(0deg)";
     isActive = false;
   }
-});
-
-// Ko-Fi
-kofiWidgetOverlay.draw("cathteam", {
-  type: "floating-chat",
-  "floating-chat.donateButton.text": "Support me",
-  "floating-chat.donateButton.background-color": "#ffffff",
-  "floating-chat.donateButton.text-color": "#323842",
 });
